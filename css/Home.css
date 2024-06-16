@@ -1,0 +1,197 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #33537c; /* Зафиксируем изображение по центру */
+    background-size: cover; /* Заполним всю доступную область */
+}
+
+#registration-form-container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center; /* добавлено */
+    padding-top: 50px; /* добавлено */
+}
+
+#registration-form {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#registration-form label {
+    display: block;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+#registration-form input[type="text"],
+#registration-form input[type="email"],
+#registration-form input[type="password"],
+#registration-form textarea,
+#registration-form select,
+#registration-form button {
+    width: 120%; /* изменено */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #16537e;
+    border-radius: 5px;
+    box-sizing: border-box; /* добавлено */
+}
+
+#registration-form button {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+fieldset {
+    font-size: 20px;
+    text-align: left;
+    padding: 4;
+    margin: 0;
+    border: none;
+}
+.features-t { /* Стиль для заголовка "Регистрация" */
+    color: #ffffff; /* Белый цвет текста */
+    margin-bottom: 20px; /* Добавлен отступ снизу, чтобы разделить заголовок и форму */
+    font-size: 30px;
+    text-align: center; /* Выравнивание текста по центру */
+}
+/* Стили для данных пользователя */
+.user-info {
+    color: #ffffff; /* Цвет текста заголовка */
+    font-size: 24px;
+}
+
+.error-message {
+    color: #ffffff; /* Белый цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+/* Общие стили для navbar */
+.navbar {
+    background-color: #595681; /* Цвет фона */
+    padding: 10px 20px; /* Поля вокруг элементов */
+    display: flex; /* Использование flexbox */
+    justify-content: space-between; /* Распределение элементов по ширине */
+    align-items: center; /* Выравнивание элементов по вертикали */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятия */
+}
+
+.btn {
+    background-color: #678882; /* Цвет фона */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Стили для логотипа */
+.navbar-brand img {
+    height: 40px; /* Высота логотипа */
+    width: auto; /* Автоматическая ширина */
+}
+
+/* Стили для навигационных кнопок */
+.nav-row {
+    display: flex; /* Использование flexbox */
+}
+
+.nav-row .btn {
+    padding: 10px 20px; /* Поля вокруг текста кнопки */
+    margin-left: 10px; /* Отступ между кнопками */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #333333; /* Цвет текста кнопок */
+    background-color: #f0f0f0; /* Цвет фона кнопок */
+    border: none; /* Убираем границы кнопок */
+    border-radius: 5px; /* Радиус скругления углов кнопок */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+.nav-row .btn:hover {
+    background-color: #dddddd; /* Цвет фона кнопок при наведении */
+}
+
+.container {
+    color: #ffffff; /* Белый цвет текста */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрируем контейнер на странице */
+    padding: 20px; /* Добавляем отступы внутри контейнера */
+}
+
+.jumbotron {
+    flex: 1; /* Занимает все доступное пространство слева */
+}
+
+.blog {
+    flex: 1; /* Занимает все доступное пространство справа */
+}
+
+.jumbotron-items {
+    padding: 20px;
+    
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Расстояние между постами блога */
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Расстояние между элементами в блог-посте */
+}
+
+iframe {
+    width: 100%; /* iframe занимает всю доступную ширину */
+    height: 300px; /* Задайте желаемую высоту iframe */
+    border: none; /* Убираем рамку у iframe */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer span {
+    font-size: 14px;
+}
+
+/* Респонсивные стили */
+@media screen and (max-width: 768px) {
+    .nav {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .jumbotron h1 {
+        font-size: 28px;
+    }
+    
+    .jumbotron p {
+        font-size: 16px;
+    }
+}

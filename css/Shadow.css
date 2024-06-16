@@ -1,0 +1,136 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #33537c; /* Зафиксируем изображение по центру */
+    background-size: cover; /* Заполним всю доступную область */
+}
+
+.error-message {
+    color: #ffffff; /* Белый цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+/* Общие стили для navbar */
+.navbar {
+    background-color: #595681; /* Цвет фона */
+    padding: 10px 20px; /* Поля вокруг элементов */
+    display: flex; /* Использование flexbox */
+    justify-content: space-between; /* Распределение элементов по ширине */
+    align-items: center; /* Выравнивание элементов по вертикали */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятия */
+}
+
+/* Стили для логотипа */
+.navbar-brand img {
+    height: 40px; /* Высота логотипа */
+    width: auto; /* Автоматическая ширина */
+}
+
+/* Стили для навигационных кнопок */
+.nav-row {
+    display: flex; /* Использование flexbox */
+}
+
+.nav-row .btn {
+    padding: 10px 20px; /* Поля вокруг текста кнопки */
+    margin-left: 10px; /* Отступ между кнопками */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #333333; /* Цвет текста кнопок */
+    background-color: #f0f0f0; /* Цвет фона кнопок */
+    border: none; /* Убираем границы кнопок */
+    border-radius: 5px; /* Радиус скругления углов кнопок */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+.nav-row .btn:hover {
+    background-color: #dddddd; /* Цвет фона кнопок при наведении */
+}
+
+
+/* Стили для ячеек таблицы */
+td {
+    padding: 10px; /* Отступы внутри ячеек */
+}
+
+/* Стили для заголовка */
+.features-t {
+    color: #ffffff; /* Цвет текста заголовка */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Стили для данных пользователя */
+.user-info {
+    color: #ffffff; /* Цвет текста заголовка */
+    font-size: 24px;
+}
+#registration-form {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 400px;
+    margin: 0 auto;
+}
+/* Стили для отдельных строк информации */
+.user-info div {
+    margin-bottom: 10px; /* Внешний отступ снизу */
+}
+
+/* Респонсивные стили */
+@media screen and (max-width: 768px) {
+    .nav {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+}
+
+#emailForm {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.397);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#emailForm h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#emailForm input[type="email"],
+#emailForm textarea {
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#emailForm textarea {
+    height: 100px;
+}
+
+#emailForm button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #855e58;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#emailForm button[type="submit"]:hover {
+    background-color: #855e58;
+}
